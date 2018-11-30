@@ -4,4 +4,4 @@ RUN pip install --upgrade pip
 RUN pip install jenkins-job-builder
 WORKDIR /jobs
 
-ENTRYPOINT ["/bin/sh"]
+ENTRYPOINT ["/usr/bin/jenkins-jobs"]
