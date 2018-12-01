@@ -2,10 +2,12 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/ypsman/jenkins-jobs.svg) ![Docker Build Status](https://img.shields.io/docker/build/ypsman/jenkins-jobs.svg)
 
 
-
 # docker-jenkins-jobs
 
-Dockerfile to run jenkins-job-builder
+Dockerfile to run jenkins-job-builder.  
+Available on [Docker-Hub](https://hub.docker.com/r/ypsman/jenkins-jobs/)
+
+	docker pull ypsman/jenkins-jobs
 
 #### Usage with Jobs File:
 
@@ -19,8 +21,8 @@ Dockerfile to run jenkins-job-builder
 
 #### Usage with Gitlab-ci:
 
-This Dockerfile also contains maketools, for a better usage with Gitlab-ci.
-Just put a ***Makefile*** and ***gitlab-ci.yml*** in your Gitlab Project
+This Dockerfile also contains maketools, for a better usage with   
+Gitlab-ci. Just put a ***Makefile*** and ***gitlab-ci.yml*** in your Gitlab Project  
 to autodeploy your Jobs.
 
 
