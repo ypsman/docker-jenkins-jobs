@@ -1,5 +1,7 @@
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/ypsman/jenkins-jobs.svg)
+![Docker Build Status](https://img.shields.io/docker/build/ypsman/jenkins-jobs.svg)
+
 
 
 # docker-jenkins-jobs
