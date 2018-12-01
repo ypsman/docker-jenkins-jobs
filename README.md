@@ -1,6 +1,5 @@
 
-![Docker Pulls](https://img.shields.io/docker/pulls/ypsman/jenkins-jobs.svg)
-![Docker Build Status](https://img.shields.io/docker/build/ypsman/jenkins-jobs.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/ypsman/jenkins-jobs.svg) ![Docker Build Status](https://img.shields.io/docker/build/ypsman/jenkins-jobs.svg)
 
 
 
@@ -11,12 +10,12 @@ Dockerfile to run jenkins-job-builder
 #### Usage with Jobs File:
 
     docker run -it --rm -v $(pwd)/jenkins_jobs.ini:/etc/jenkins_jobs/jenkins_jobs.ini \
-    -v $(pwd)/jobfile.yml:jobsfile.yml ypsman/jenkins-jobs:dev update jobsfile.yml
+    -v $(pwd)/jobfile.yml:jobsfile.yml ypsman/jenkins-jobs update jobsfile.yml
 
 #### Usage with Jobs Folder:
 
     docker run -it --rm -v $(pwd)/jenkins_jobs.ini:/etc/jenkins_jobs/jenkins_jobs.ini \
-    -v $(pwd)/jobs:/jobs ypsman/jenkins-jobs:dev update /jobs
+    -v $(pwd)/jobs:/jobs ypsman/jenkins-jobs update /jobs
 
 #### Usage with Gitlab-ci:
 
@@ -37,7 +36,7 @@ Example: Makefile
 Example: gitlab-ci.yml
   
     image: 
-      name: ypsman/jenkins-jobs:dev
+      name: ypsman/jenkins-jobs
       entrypoint: [""]
 
     test:
