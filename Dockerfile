@@ -2,7 +2,7 @@ FROM alpine
 
 LABEL maintainer="Yves Sanderbrand <yvessander@gmail.com>" \
       url="https://github.com/ypsman/docker-jenkins-jobs" \
-      description="jenkins-job-builder with Docker"
+      description="run jenkins-job-builder with Docker"
 
 RUN apk add --no-cache python py-pip make 
 RUN pip install --upgrade pip
